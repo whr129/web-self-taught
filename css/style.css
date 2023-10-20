@@ -1,0 +1,83 @@
+/* universally* {
+    color:black;
+    font-size:48px;
+} */
+h2 {
+    color: blue;
+}/* element */
+p.soccerteam {
+    color: red;
+}
+.fff,h1{
+    font-size: large;
+}
+#paris {
+    color: brown;
+}
+ol li {
+    color: blueviolet;
+}/*后代选择器*/
+div>a {
+    color: pink;
+}/*子代选择器*/
+div+p {
+    color: bisque;
+}
+div~p {
+    color: blanchedalmond;
+}
+/* [title] {
+    color: antiquewhite;
+} */
+/* [title="ccc"] {
+    color: aliceblue;
+} */
+[title^="c"]{
+    font-size: larger;
+}
+/* 以c开头的 */
+[title$="c"] {
+    font-size: larger;
+}
+/* 以c结尾的 */
+a:link {
+    color: orange;
+}
+a:visited {
+    color:gray;
+}
+a:hover {
+    color:aquamarine
+}
+a:active {
+    color: black;
+}
+/* 按照顺序 */
+input:focus {
+    background-color: green;
+}
+div>p:first-child {
+    color: red;
+}
+/* 可以嵌套中的第一个儿子
+可以用nth-child(-n+5) 选择前五个 必须是an+b的形式*/
+div>p:first-of-type{
+    color: blue;
+}
+/* 也有last和nth */
+span:only-child {
+    color: aqua;
+}
+span:only-of-type {
+    color: azure;
+}
+/* :root {
+    font-size: larger;
+} */
+div>p:not(.fail){
+    color:red;
+}
+input:checked {
+    width: 100px;
+    height: 100px;
+}
